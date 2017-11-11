@@ -71,3 +71,11 @@ If you have any issues with file manager, you may report them on
 This software is released under the MIT license.
 
 Icons by [Yusuke Kamiyamane](http://p.yusukekamiyamane.com/).
+
+## Using as Docker
+
+Just run 
+
+```bash 
+docker run -v /your/files:/mount -p 80:80 smokserwis/filemanager
+```
