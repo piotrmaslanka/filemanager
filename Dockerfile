@@ -6,7 +6,8 @@ ADD src /var/www/html/src
 
 # SANE DEFAULTS
 ENV USER=fm_admin \
-    PASS=fm_admin
+    PASS=fm_admin \
+    ROOT_URL=example.com
 
 VOLUME /mount
 
