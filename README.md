@@ -24,7 +24,8 @@ Copy **filemanager.php** to your website folder and open it with web browser
 
 Default username/password: **fm_admin**/**fm_admin**
 
-**Warning! Please set your own username and password in `$auth_users` before use.**
+**Warning! Please set your own username and password by settings environment values
+USER and PASS before use.**
 
 To enable or disable authentication set `$use_auth` to `true` or `false`.
 
@@ -85,7 +86,10 @@ Following envs are yours to set:
 * USER - default user name
 * PASS - default password
 * ROOT_URL - root URL where you keep your site (eg. https://example.com/ )
+* FORCE_HTTPS - for these cases where you run behind a SSL proxy and don't want to see http refers. Disabled by default
 
 Keep your files mounted as in-container volume of /var/www/mount
 That hostname is important - Apache will cry otherwise
 
+**WARNING! This will forcibly chmod -R 777 all of your files that can be viewed. My use case was to have a Web
+access to Samba shares so it doesn't really matter, but it may for you!**

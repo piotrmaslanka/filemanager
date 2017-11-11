@@ -67,6 +67,10 @@ if (empty($auth_users)) {
 $is_https = isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] == 'on' || $_SERVER['HTTPS'] == 1)
     || isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https';
 
+if (isset($_ENV['FORCE_HTTPS'])) {
+    $is_https = true;
+}
+
 // clean and check $root_path
 $root_path = rtrim($root_path, '\\/');
 $root_path = str_replace('\\', '/', $root_path);
