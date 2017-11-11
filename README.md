@@ -79,3 +79,9 @@ Just run
 ```bash 
 docker run -v /your/files:/mount -p 80:80 smokserwis/filemanager
 ```
+Following envs are yours to set:
+* USER - default user name
+* PASS - default password
+* ROOT_URL - root URL where you keep your site (eg. https://example.com/ )
+
+Keep your files mounted as in-container volume of /mount
