@@ -9,7 +9,7 @@ ENV USER=fm_admin \
     PASS=fm_admin \
     ROOT_URL=https://example.com/
 
-VOLUME /mount
+VOLUME /var/www/mount
 
 EXPOSE 80
 
