@@ -72,6 +72,8 @@ This software is released under the MIT license.
 
 Icons by [Yusuke Kamiyamane](http://p.yusukekamiyamane.com/).
 
+Docker adaptations by [Piotr Maślanka](https://github.com/piotrmaslanka).
+
 ## Using as Docker
 
 Just run 
