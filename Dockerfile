@@ -4,6 +4,10 @@ ADD phpfm.png /var/www/phpfm.png
 ADD LICENSE /var/www/LICENSE
 ADD src /var/www/src
 
+# SANE DEFAULTS
+ENV USER=fm_admin \
+    PASS=fm_admin
+
 VOLUME /mount
 
 EXPOSE 80
