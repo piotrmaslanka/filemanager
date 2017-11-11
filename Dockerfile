@@ -1,7 +1,7 @@
 FROM php:5.6.32-apache
 ADD filemanager.php /var/www/html/index.php
-ADD phpfm.png /var/www/html/phpfm.png
-ADD LICENSE /var/www/html/LICENSE
+ADD LICENSE /var/www/LICENSE
+ADD README.md /var/www/README.md
 ADD src /var/www/html/src
 
 # SANE DEFAULTS
