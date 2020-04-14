@@ -1,5 +1,6 @@
 #!/bin/bash
 
 chmod -R 777 /var/www/mount
+chmod -R 777 /tmp
 
-apache2-foreground
+exec apache2-foreground
